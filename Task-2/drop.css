@@ -1,0 +1,147 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(162, 109, 38);
+    overflow-x: hidden;
+}
+.content{
+    display: flex;
+}
+
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    gap: 20px;
+    background-color: rgb(0, 0, 0);
+    font-size: 22px;
+    min-height: 95px;
+    min-width: 95.05rem;
+    padding-right: 15px;
+}
+li a{
+    color: rgba(255, 255, 255, 0.881);
+    position: relative;
+    cursor: pointer;
+}
+li a:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+li a:hover{
+   
+    color: white;
+}
+li a:hover:after{
+    width: 100%;
+}
+img{
+    height:50px;
+    border: none;
+    border-radius: 50%;
+}
+h3{
+    color: white;
+    padding-left:5px ;
+}
+.li-link1{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 30rem;
+}
+
+.search{
+    background: none;
+    border: none;
+    color: gray;
+    font-size: 20px;
+   
+    
+}
+.form{
+    display: flex;
+    width: 300px;
+    padding: 5px;
+    color: gray;
+    font-size: 20px;
+    border-radius: 30px;
+    box-shadow: rgba(142, 180, 186, 0.419) 0px 3px 6px, rgba(153, 92, 92, 0.359) 0px 3px 6px;
+   
+}
+.form:hover{
+    background-color: black;
+}
+.drop{
+    position: absolute;
+    padding: 1.5rem 1.5rem;
+    margin: 0.3rem 0.5rem;
+    display:none;
+}
+.cusine:hover .drop{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(135deg,  rgb(162, 109, 38));
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: rgba(6, 6, 6, 0.779) 0px 22px 70px 4px; 
+    cursor: pointer; 
+}
+.drop li:hover{
+    border-radius: 0;
+    color: white;
+}
+
+.chef{
+    height: 25rem;
+    position: absolute;
+    padding: 8rem 20rem;
+}
+h2{
+    padding: 17rem 46rem;
+    font-weight: bolder;
+    font-size: 35px;
+}
+.drop li a.active {
+    color: #ff6347; 
+    font-weight: bold;
+    text-decoration: underline;
+}
+.food-sec{
+    margin: 6rem 0;
+}
+.food {
+    height: 25rem;
+    width: 30%;
+    position: absolute;
+    padding: 8rem 13rem;
+}
+.foodi{
+    height: 26rem;
+    width: 30%;
+    position: absolute;
+    padding: 8rem 13rem;
+    
+}
+.name{
+    padding-top: 36rem;
+    padding-left:4rem ;
+    text-align: center;
+    vertical-align: ;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+
